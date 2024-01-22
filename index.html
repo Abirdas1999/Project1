@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <!-- <link rel="stylesheet" href="Style.css"> -->
+</head>
+<body>
+    <style>*{
+        margin: 0;
+        padding: 0;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+        box-sizing: border-box;
+    }
+    /* ----------------nav------------- */
+    body{
+        background: #080808;
+        color: #fff;
+    }
+    #headr{
+        width: 100%;
+        height: 100vh;
+        background-image: url(Contant/Abir3.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .head{
+        padding: 10px 10%;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .logo{
+        width: 250px;
+        /* height: 170px; */
+    
+    }
+    nav ul li{
+        display: inline-block;
+        list-style:none;
+        margin: 10px 20px;
+    }
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: rgba(244, 63, 2, 0.898);
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    .headTest{
+        margin-top: 20%;
+        font-size: 30px;
+    }
+    .headTest h1{
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    .headTest h1 span{
+        color:crimson;
+    }
+    /* ------------------body----------------- */
+    #About{
+        padding: 80px 0;
+        color: antiquewhite;
+    
+    }
+    .box-1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .about-1{
+     flex-basis: 35%;
+    }
+    .about-1 img{
+        width: 80%;
+        border-radius: 15px;
+    }
+    .about-2{
+    flex-basis: 60%;
+    }
+    .sub{
+        font-size: 60px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .tab-titles{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0 40px;
+    }
+    /* .links{
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    } */
+    /* .a h3{ */
+        /* color: #fff; */
+        /* text-decoration: none; */
+        /* font-size: 20px;
+        position: relative;
+    } */
+    /* .a h3::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background:greenyellow
+        position: absolute;
+        left:0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    .a h3:hover::after{
+        width: 100%;
+    } */
+    .a{
+        margin: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    .a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    .a:hover::after{
+        width: 100%;
+    }
+    /* --------------------experiment---------- */
+    .tab-titles div{
+        /* text-decoration: none; */
+        color: cadetblue;
+        font-size: 12px;
+        border-radius: 10px;
+        transition: background 0.5s, transform 0.5s;
+        /* display: inline-block; */
+    }
+    /* .tab-titles div:hover{
+        background: #080808;
+        transform: tr; */
+    /* } */
+    .copy{
+        background:rgba(193, 131, 15, 0.238)
+    }</style>
+    <!-- ------------------------------nav---------------------------- -->
+    <div id="headr">
+        <div class="head">
+            <nav>
+                <img src="Contant/ABIR logo.png" class="logo" alt="logo">
+                <ul>
+                    <li><a href="#headr">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headTest">
+                <p>Front-End and Web Developer</p>
+                <h1>Hi,I'm <span>Abir</span><br> from Kolkata</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------about---------------------------------- -->
+    <div id="About">
+        <div class="box">
+            <div class="box-1">
+                <div class="about-1">
+                    <img src="Contant/About.png">
+                </div>
+                <div class="about-2">
+                    <h1 class="sub">About Me</h1>
+                    <p>
+                        I am Abir Das. I am from Kolkata.Now I am Starting My Cariar As a Intern in Web Devolopment.If you Interested to build your buisness protfolio and website contact me.I work in UI/UX ,web design and also for your website.
+                    </p>
+                    <div class="tab-titles">
+                        <div><h3 class="a" style="color: crimson;">Skills</h3>
+                        <p>
+                            UI/UX <br>HTML,CSS,JS <br>React <br>Nodejs <br>
+                        
+                        </p></div>
+                        <div><h3 class="a" style="color: crimson;">Education</h3>
+                        <p>
+                            B.Tech in Computer Science-(CIEM,Kolkata,2024) <br>Diploma in Computer Science-(ICVP,Jhargram,2021) <br>Hs-(RVHS,2018) <br>
+                        </p></div>
+                        <div><h3 class="a" style="color: crimson;">Experince</h3>
+                        <p>
+                            Intern at AarhatISV(2024) <br>
+                        </p></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------contact--------------------------- -->
+    <div id="contact">
+        <div class="b">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p>abirbanti527@gmail.com</p>
+                <p>6290588822</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-left"></div>
+        </div>
+
+
+    </div>
+    <div class="copy">
+        <p>Copyright @ Abir . Made By abir.</p>
+    </div>
+    
+</body>
+</html>
